@@ -61,19 +61,19 @@ module.exports.run = async({api,event,args}) => {
     if (args[0] == "admin") {
       var callback = () => api.sendMessage(
   {body:`梁Admin Bot梁\n
-👀 Tên: Hoàng Hải Long ( LTD )
-❎ Tuổi: 19 🐒
+👀 Tên: Trần Trọng Mạnh
+❎ Tuổi: 17 🐒
 👤 Giới tính: Nam
-💫 Chiều cao cân nặng: 1m71 x 52kg
+💫 Chiều cao cân nặng: 1m65 x 45kg
 💘 Mối quan hệ: Độc thân
-🌎 Quê quán: Phúc Yên ( Vĩnh Phúc - 88 )
+🌎 Quê quán: Thanh Chương (Nghệ An - 37)
 👫 Gu: Biết nấu cơm
-🌸 Tính cách: Chả biết nữa =))
-🌀 Sở thích: Chơi game, xem phim anime blabla, ăn, ngủ
+🌸 Tính cách: Nhạt,ít nói
+🌀 Sở thích: Chơi game, code dạo
 💻Contact💻
-☎ SĐT&Zalo:035.525.8611
-🌐 Facebook: https://www.facebook.com/longk.hoanghai
-✉️ Email: hoanghailongk@gmail.com`,
+☎ SĐT&Zalo:0385.108.224
+🌐 Facebook: https://www.facebook.com/ttm130
+✉️ Email: trantrongmanh2004@gmail.com`,
     attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
       return request(
